@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023/01-January/01-25-2023.md",
+                "file": "docs/Daily/2023/01-January/01-25-2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023/01-January/01-25-2023.md",
+                "file": "docs/AD lateral movement & Post exploitation.md",
                 "mode": "source",
                 "source": false
               }
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023/01-January/01-25-2023.md",
+                "file": "docs/AD lateral movement & Post exploitation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023/01-January/01-25-2023.md",
+                "file": "docs/AD lateral movement & Post exploitation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023/01-January/01-25-2023.md"
+                "file": "docs/AD lateral movement & Post exploitation.md"
               }
             }
           },
@@ -197,15 +197,15 @@
   },
   "active": "ba79292aa7d84fcd",
   "lastOpenFiles": [
-    "Daily/2023/01-January/01-25-2023.md",
-    "Hash dumping.md",
-    "Daily/2022/12-December/12-12-2022.md",
-    "Daily/2022/12-December/12-11-2022.md",
-    "Daily/2022/12-December/12-10-2022.md",
-    "Iperf Documentation.md",
-    "FRS to DFSR Sysvol.md",
-    "Free RDP TLS Cert.md",
-    "AD lateral movement & Post exploitation.md",
-    "CLI Stuff.md"
+    "docs/Daily/2023/01-January/01-25-2023.md",
+    "docs/Hash dumping.md",
+    "docs/Daily/2022/12-December/12-12-2022.md",
+    "docs/Daily/2022/12-December/12-11-2022.md",
+    "docs/Daily/2022/12-December/12-10-2022.md",
+    "docs/Iperf Documentation.md",
+    "docs/FRS to DFSR Sysvol.md",
+    "docs/Free RDP TLS Cert.md",
+    "docs/AD lateral movement & Post exploitation.md",
+    "docs/CLI Stuff.md"
   ]
 }
