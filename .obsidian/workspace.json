@@ -23,8 +23,12 @@
             "id": "ba79292aa7d84fcd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "docs/index.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -104,6 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,6 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +147,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "docs/index.md"
+              }
             }
           },
           {
@@ -187,8 +195,10 @@
       "publish:Publish changes": false
     }
   },
-  "active": "52eb0743188eb6f0",
+  "active": "ba79292aa7d84fcd",
   "lastOpenFiles": [
+    "docs/README.md",
+    "2021-11-22-22-49-26.png",
     "2021-11-22-22-52-49.png",
     "2021-11-22-22-54-02.png",
     "2022-10-25.md",
@@ -196,8 +206,6 @@
     "Daily/2023/01-January/01-19-2023.md",
     "Daily/2023/01-January/01-24-2023.md",
     "Daily/2023/01-January/01-25-2023.md",
-    "Daily/2022/12-December/12-22-2022.md",
-    "docs/Next Cloud Setup notes.md",
-    "docs/nmap.md"
+    "Daily/2022/12-December/12-22-2022.md"
   ]
 }
