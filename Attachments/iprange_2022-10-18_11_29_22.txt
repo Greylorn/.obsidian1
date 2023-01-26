@@ -1,0 +1,38 @@
+IP range for the scan: 10.0.0.0/24
+ip: 10.0.0.1, name: setup.ubnt.com. (Gateway), response: 3 ms
+ip: 10.0.0.5, name: NPI0D5B5A, response: 6 ms
+ip: 10.0.0.7, response: 0 ms
+ip: 10.0.0.15, response: 6 ms
+ip: 10.0.0.20, response: 9 ms
+ip: 10.0.0.21, response: 12 ms
+ip: 10.0.0.50, response: 8 ms
+ip: 10.0.0.52, name: station2.localdomain., response: 8 ms
+ip: 10.0.0.53, name: iPhone-4, response: 0 ms
+ip: 10.0.0.59, name: SPR-LAP-0438.localdomain., response: 6 ms
+ip: 10.0.0.60, name: Galaxy-S21-Ultra-5G.localdomain., response: 12 ms
+ip: 10.0.0.61, response: 11 ms
+ip: 10.0.0.62, name: station1.localdomain., response: 6 ms
+ip: 10.0.0.63, name: STATION10.localdomain., response: 6 ms
+ip: 10.0.0.64, name: Station9.localdomain., response: 11 ms
+ip: 10.0.0.66, name: station6.localdomain., response: 11 ms
+ip: 10.0.0.67, name: station4.localdomain., response: 8 ms
+ip: 10.0.0.70, response: 7 ms
+ip: 10.0.0.71, response: 8 ms
+ip: 10.0.0.73, name: station5.localdomain., response: 9 ms
+ip: 10.0.0.74, response: 8 ms
+ip: 10.0.0.77, response: 7 ms
+ip: 10.0.0.78, name: Ed-PC.localdomain., response: 10 ms
+ip: 10.0.0.79, response: 7 ms
+ip: 10.0.0.81, name: MCHA-Laptop2.localdomain., response: 8 ms
+ip: 10.0.0.82, name: Laptop-Red.localdomain., response: 0 ms
+ip: 10.0.0.90, name: LanceLaptop.localdomain., response: 11 ms
+ip: 10.0.0.92, response: 8 ms
+ip: 10.0.0.93, response: 8 ms
+ip: 10.0.0.95, response: 7 ms
+ip: 10.0.0.96, response: 8 ms
+ip: 10.0.0.97, response: 9 ms
+ip: 10.0.0.98, response: 7 ms
+ip: 10.0.0.99, name: W8341, response: 6 ms
+ip: 10.0.0.100, name: R8333, response: 26 ms
+ip: 10.0.0.210
+ip: 10.0.0.220, name: unifi., response: 11 ms
