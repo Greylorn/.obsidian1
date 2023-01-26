@@ -1,0 +1,8 @@
+
+# Pending Tasks
+```dataviewjs
+	dv.taskList(dv.pages('!"Templates"').file.tasks
+	.where(t => !t.completed))
+```
+
+# Notes

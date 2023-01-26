@@ -1,0 +1,1491 @@
+{
+  "addToDefaultIfMissing": true,
+  "calendars": [
+    {
+      "name": "Gregorian Calendar",
+      "description": "Test Calendar",
+      "autoParse": true,
+      "path": "/",
+      "supportTimelines": false,
+      "syncTimelines": false,
+      "timelineTag": "#timeline",
+      "static": {
+        "displayDayNumber": false,
+        "incrementDay": true,
+        "displayMoons": false,
+        "firstWeekDay": 1,
+        "overflow": true,
+        "weekdays": [
+          {
+            "type": "day",
+            "name": "Sunday",
+            "id": "ID_19ea684b4a08"
+          },
+          {
+            "type": "day",
+            "name": "Monday",
+            "id": "ID_2928b90ab949"
+          },
+          {
+            "type": "day",
+            "name": "Tuesday",
+            "id": "ID_0ad9a8f9e95b"
+          },
+          {
+            "type": "day",
+            "name": "Wednesday",
+            "id": "ID_195a4b290bc9"
+          },
+          {
+            "type": "day",
+            "name": "Thursday",
+            "id": "ID_abe8c89b0999"
+          },
+          {
+            "type": "day",
+            "name": "Friday",
+            "id": "ID_2b5b8a79fa4a"
+          },
+          {
+            "type": "day",
+            "name": "Saturday",
+            "id": "ID_1a78cb79c8cb"
+          }
+        ],
+        "months": [
+          {
+            "name": "January",
+            "type": "month",
+            "length": 31,
+            "id": "ID_e9997a780b3a"
+          },
+          {
+            "name": "February",
+            "type": "month",
+            "length": 28,
+            "id": "ID_b8c9ebeb0b89"
+          },
+          {
+            "name": "March",
+            "type": "month",
+            "length": 31,
+            "id": "ID_b83bda2b9be8"
+          },
+          {
+            "name": "April",
+            "type": "month",
+            "length": 30,
+            "id": "ID_29baea7b28ab"
+          },
+          {
+            "name": "May",
+            "type": "month",
+            "length": 31,
+            "id": "ID_6a3899fad909"
+          },
+          {
+            "name": "June",
+            "type": "month",
+            "length": 30,
+            "id": "ID_384aeb1afa8a"
+          },
+          {
+            "name": "July",
+            "type": "month",
+            "length": 31,
+            "id": "ID_48b8cba87b8a"
+          },
+          {
+            "name": "August",
+            "type": "month",
+            "length": 31,
+            "id": "ID_fa0b1a6bab8a"
+          },
+          {
+            "name": "September",
+            "type": "month",
+            "length": 30,
+            "id": "ID_da880b8af849"
+          },
+          {
+            "name": "October",
+            "type": "month",
+            "length": 31,
+            "id": "ID_babba8186968"
+          },
+          {
+            "name": "November",
+            "type": "month",
+            "length": 30,
+            "id": "ID_da582bfaf9b9"
+          },
+          {
+            "name": "December",
+            "type": "month",
+            "length": 31,
+            "id": "ID_ba1bab4a3a28"
+          }
+        ],
+        "moons": [
+          {
+            "name": "Moon",
+            "cycle": 29.530588853,
+            "offset": 9.24953,
+            "faceColor": "#ffffff",
+            "shadowColor": "#000000",
+            "id": "ID_a9ab186b1819"
+          }
+        ],
+        "leapDays": [
+          {
+            "name": "Leap Day",
+            "type": "leapday",
+            "interval": [
+              {
+                "ignore": false,
+                "exclusive": false,
+                "interval": 4
+              },
+              {
+                "ignore": false,
+                "exclusive": true,
+                "interval": 100
+              },
+              {
+                "ignore": false,
+                "exclusive": false,
+                "interval": 400
+              }
+            ],
+            "offset": 0,
+            "timespan": 1,
+            "intercalary": false,
+            "id": "ID_b91ad86a887a"
+          }
+        ],
+        "eras": [
+          {
+            "name": "Before Christ",
+            "format": "Year {{abs_year}} - {{era_name}}",
+            "start": {
+              "year": -1,
+              "month": 0,
+              "day": 31
+            },
+            "id": "ID_9a2978c92baa",
+            "restart": false,
+            "endsYear": false,
+            "event": false
+          },
+          {
+            "name": "Anno Domini",
+            "format": "Year {{year}} - {{era_name}}",
+            "start": {
+              "year": 1,
+              "month": 0,
+              "day": 1
+            },
+            "id": "ID_a8db38899a2b",
+            "restart": false,
+            "endsYear": false,
+            "event": false
+          }
+        ],
+        "offset": 0
+      },
+      "current": {
+        "year": 2023,
+        "month": 1,
+        "day": 2
+      },
+      "events": [
+        {
+          "name": "Summer Solstice",
+          "description": "At the summer solstice, the Sun travels the longest path through the sky, and that day therefore has the most daylight.",
+          "id": "824599",
+          "note": null,
+          "date": {
+            "day": null,
+            "year": null,
+            "month": null
+          },
+          "category": null
+        },
+        {
+          "name": "Winter Solstice",
+          "description": "The winter solstice marks the shortest day and longest night of the year, when the sun is at its lowest arc in the sky.",
+          "id": "824600",
+          "note": null,
+          "date": {
+            "day": null,
+            "year": null,
+            "month": null
+          },
+          "category": null
+        },
+        {
+          "name": "Spring Equinox",
+          "description": "The equinox marks the day and the night is equally as long.",
+          "id": "824601",
+          "note": null,
+          "date": {
+            "day": null,
+            "year": null,
+            "month": null
+          },
+          "category": null
+        },
+        {
+          "name": "Autumn Equinox",
+          "description": "The equinox marks the day and the night is equally as long.",
+          "id": "824602",
+          "note": null,
+          "date": {
+            "day": null,
+            "year": null,
+            "month": null
+          },
+          "category": null
+        },
+        {
+          "name": "Paschal Full Moon",
+          "description": "The first full moon after march 21st, which is considered the fixed date for the spring equinox.",
+          "id": "824604",
+          "note": null,
+          "date": {
+            "day": null,
+            "year": null,
+            "month": null
+          },
+          "category": "christian-holidays"
+        },
+        {
+          "name": "Easter",
+          "description": "Easter is considered the most important feast for Christians, celebrating the resurrection of Christ. It is classed as a moveable feast occurring on the first full moon after the spring equinox, which is considered to be fixed at March 21st for the sake of computing the date.",
+          "id": "824605",
+          "note": null,
+          "date": {
+            "day": null,
+            "year": null,
+            "month": null
+          },
+          "category": "christian-holidays"
+        },
+        {
+          "name": "Easter Monday",
+          "description": "The Monday following the Easter Sunday is often considered part of the Easter Celebration and is a day off in many countries with a strong Christian tradition.",
+          "id": "824606",
+          "note": null,
+          "date": {
+            "day": null,
+            "year": null,
+            "month": null
+          },
+          "category": "christian-holidays"
+        },
+        {
+          "name": "Good Friday",
+          "description": "Good Friday is the Friday preceding Easter. It comemmorates the crucifixion of Christ according to the Bible.",
+          "id": "824607",
+          "note": null,
+          "date": {
+            "day": null,
+            "year": null,
+            "month": null
+          },
+          "category": "christian-holidays"
+        },
+        {
+          "name": "Pentecost",
+          "description": "Celebrated exactly 50 days after Easter, Pentecost is the celebration of the Holy Spirit appearing before the Apostles as described in the Bible.",
+          "id": "824608",
+          "note": null,
+          "date": {
+            "day": null,
+            "year": null,
+            "month": null
+          },
+          "category": "christian-holidays"
+        },
+        {
+          "name": "New Year's Day",
+          "description": "New Year's Day marks the start of a new year on the Gregorian Calendar. It starts when the clock strikes midnight and is often celebrated with fireworks, champagne and kissing.",
+          "id": "824609",
+          "note": null,
+          "date": {
+            "day": 1,
+            "year": null,
+            "month": 0
+          },
+          "category": "secular-holidays"
+        },
+        {
+          "name": "Valentine's Day",
+          "description": "Valentine's day is a celebration of love and romance that is popular across the world. Many more cynically minded people mostly consider it an attempt to monetize the expectation of romantic gestures on the holiday through gift cards, flowers, chocolate and dates.",
+          "id": "824610",
+          "note": null,
+          "date": {
+            "day": 14,
+            "year": null,
+            "month": 1
+          },
+          "category": "secular-holidays"
+        },
+        {
+          "name": "Halloween",
+          "description": "Halloween is holiday popular in the US, Canada and Ireland that has gradually been adopted by more and more countries. It is often celebrated by people dressing up, usually as something scary. Children will often go from door to door shouting \"trick or treat\" in the hopes of receiving candy, while adults tend to go to parties.",
+          "id": "824611",
+          "note": null,
+          "date": {
+            "day": 31,
+            "year": null,
+            "month": 9
+          },
+          "category": "secular-holidays"
+        },
+        {
+          "name": "Christmas",
+          "description": "Christmas is a Christian holiday celebrating the birth of Christ. Due to a combination of marketability and long lasting traditions it is popular even among many non-Christians, especially in countries that have a strong Christian tradition.",
+          "id": "824603",
+          "note": null,
+          "date": {
+            "day": 25,
+            "year": null,
+            "month": 11
+          },
+          "category": "christian-holidays"
+        },
+        {
+          "name": "Introduction of the Gregorian Calendar",
+          "description": "On this day in 1582 the Gregorian calendar was officially introduced, following Thursday October 4th on the Julian Calendar",
+          "id": "824614",
+          "note": null,
+          "date": {
+            "day": 15,
+            "year": 1582,
+            "month": 9
+          },
+          "category": "historical-events"
+        },
+        {
+          "name": "Work on the first version of this calendar started.",
+          "description": "Aecius started work on the first version Gregorian Calendar for Fantasy Calendar on this day.",
+          "id": "824612",
+          "note": null,
+          "date": {
+            "day": 23,
+            "year": 2019,
+            "month": 5
+          },
+          "category": "miscellaneous-events"
+        },
+        {
+          "name": "Work on this version of the Gregorian Calendar started.",
+          "description": "On this day, Aecius started to rework the Gregorian Calendar from scratch to make it work with the updates Wasp and Alex implemented since the summer of 2019.",
+          "id": "824613",
+          "note": null,
+          "date": {
+            "day": 21,
+            "year": 2020,
+            "month": 0
+          },
+          "category": "miscellaneous-events"
+        },
+        {
+          "id": "ID_6acb5ab999b9",
+          "name": "10-17-2022",
+          "note": "Daily/2022/10-October/10-17-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 9,
+            "day": 17
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_4828793b99ab",
+          "name": "10-18-2022",
+          "note": "Daily/2022/10-October/10-18-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 9,
+            "day": 18
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_8abbeb98cb48",
+          "name": "10-20-2022",
+          "note": "Daily/2022/10-October/10-20-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 9,
+            "day": 20
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_79a818ea7a59",
+          "name": "10-19-2022",
+          "note": "Daily/2022/10-October/10-19-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 9,
+            "day": 19
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_38a87b78e81a",
+          "name": "10-21-2022",
+          "note": "Daily/2022/10-October/10-21-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 9,
+            "day": 21
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_bb58db3b2be9",
+          "name": "10-19-2022",
+          "note": "Daily/2022/10-October/10-19-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 9,
+            "day": 19
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_b98a7a1978db",
+          "name": "10-21-2022",
+          "note": "Daily/2022/10-October/10-21-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 9,
+            "day": 21
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_ebeb89dbab38",
+          "name": "10-25-2022",
+          "note": "Daily/2022/10-October/10-25-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 9,
+            "day": 25
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_8a9acbab4a88",
+          "name": "10-24-2022",
+          "note": "Daily/2022/10-October/10-24-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 9,
+            "day": 24
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_fb58694beac9",
+          "name": "10-25-2022",
+          "note": "Daily/2022/10-October/10-25-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 9,
+            "day": 25
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_4baaa829e92a",
+          "name": "10-24-2022",
+          "note": "Daily/2022/10-October/10-24-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 9,
+            "day": 24
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_3bf8dbbafb3b",
+          "name": "2022-10-25",
+          "note": "2022-10-25.md",
+          "date": {
+            "year": 25,
+            "month": 5,
+            "day": 10
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_390a2b8b49f8",
+          "name": "iprange_2022-10-18_11_29_22",
+          "note": "Attachments/iprange_2022-10-18_11_29_22.txt",
+          "date": {
+            "year": 18,
+            "month": 5,
+            "day": 10
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_9a487a8ad93b",
+          "name": "10-28-2022",
+          "note": "Daily/2022/10-October/10-28-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 9,
+            "day": 28
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_ea797bca99eb",
+          "name": "10-26-2022",
+          "note": "Daily/2022/10-October/10-26-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 9,
+            "day": 26
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_98cb594adb49",
+          "name": "10-27-2022",
+          "note": "Daily/2022/10-October/10-27-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 9,
+            "day": 27
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_9b5a987b5b68",
+          "name": "10-28-2022",
+          "note": "Daily/2022/10-October/10-28-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 9,
+            "day": 28
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_2a4a58bbd9e8",
+          "name": "10-26-2022",
+          "note": "Daily/2022/10-October/10-26-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 9,
+            "day": 26
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_3b38d8ea6859",
+          "name": "10-27-2022",
+          "note": "Daily/2022/10-October/10-27-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 9,
+            "day": 27
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_7a3838d9f8cb",
+          "name": "11-06-2022",
+          "note": "Daily/2022/11-November/11-06-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 6
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_2929fba8387a",
+          "name": "11-01-2022",
+          "note": "Daily/2022/11-November/11-01-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 1
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_d8ba68b9cb4a",
+          "name": "11-02-2022",
+          "note": "Daily/2022/11-November/11-02-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 2
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_3aea8a7aa96b",
+          "name": "11-06-2022",
+          "note": "Daily/2022/11-November/11-06-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 6
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_4bda5a0a7918",
+          "name": "11-01-2022",
+          "note": "Daily/2022/11-November/11-01-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 1
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_c96b4b78b91b",
+          "name": "11-02-2022",
+          "note": "Daily/2022/11-November/11-02-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 2
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_f8598b8a4978",
+          "name": "11-03-2022",
+          "note": "Daily/2022/11-November/11-03-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 3
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_fb5a5a684809",
+          "name": "11-04-2022",
+          "note": "Daily/2022/11-November/11-04-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 4
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_5afb39685889",
+          "name": "10-31-2022",
+          "note": "Daily/2022/10-October/10-31-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 9,
+            "day": 31
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_a8fbf889892a",
+          "name": "11-12-2022",
+          "note": "Daily/2022/11-November/11-12-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 12
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_892a68eb383a",
+          "name": "11-07-2022",
+          "note": "Daily/2022/11-November/11-07-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 7
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_7a59798829e8",
+          "name": "11-08-2022",
+          "note": "Daily/2022/11-November/11-08-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 8
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_1b1bd8da1849",
+          "name": "11-09-2022",
+          "note": "Daily/2022/11-November/11-09-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 9
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_bbca8aca9afa",
+          "name": "11-10-2022",
+          "note": "Daily/2022/11-November/11-10-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 10
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_794a9a8a28fb",
+          "name": "11-11-2022",
+          "note": "Daily/2022/11-November/11-11-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 11
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_387889988afa",
+          "name": "11-12-2022",
+          "note": "Daily/2022/11-November/11-12-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 12
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_f8b8fa68cb0b",
+          "name": "11-07-2022",
+          "note": "Daily/2022/11-November/11-07-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 7
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_bbc85a982bbb",
+          "name": "11-08-2022",
+          "note": "Daily/2022/11-November/11-08-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 8
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_eb68e8aa3a88",
+          "name": "11-09-2022",
+          "note": "Daily/2022/11-November/11-09-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 9
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_eaf93bd80a38",
+          "name": "11-10-2022",
+          "note": "Daily/2022/11-November/11-10-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 10
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_4a7b7b6a1ac9",
+          "name": "11-11-2022",
+          "note": "Daily/2022/11-November/11-11-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 11
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_3b48bbb9f809",
+          "name": "11-13-2022",
+          "note": "Daily/2022/11-November/11-13-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 13
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_1b081bb9f80a",
+          "name": "11-13-2022",
+          "note": "Daily/2022/11-November/11-13-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 13
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_3b997ae8098b",
+          "name": "12-10-2022",
+          "note": "Daily/2022/12-December/12-10-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 10
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_eadbcb980bcb",
+          "name": "12-10-2022",
+          "note": "Daily/2022/12-December/12-10-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 10
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_9acb3b78a94a",
+          "name": "11-16-2022",
+          "note": "Daily/2022/11-November/11-16-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 16
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_eb7a289b1859",
+          "name": "11-15-2022",
+          "note": "Daily/2022/11-November/11-15-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 15
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_a898bbe98aeb",
+          "name": "11-14-2022",
+          "note": "Daily/2022/11-November/11-14-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 14
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_cb3bf84819fb",
+          "name": "11-30-2022",
+          "note": "Daily/2022/11-November/11-30-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 30
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_59f81878b97a",
+          "name": "12-05-2022",
+          "note": "Daily/2022/12-December/12-05-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_885bd908d89a",
+          "name": "11-28-2022",
+          "note": "Daily/2022/11-November/11-28-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 28
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_5a7869e8593b",
+          "name": "11-21-2022",
+          "note": "Daily/2022/11-November/11-21-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 21
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_ca7b7b1b3988",
+          "name": "12-01-2022",
+          "note": "Daily/2022/12-December/12-01-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_fb2bbab858cb",
+          "name": "12-08-2022",
+          "note": "Daily/2022/12-December/12-08-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 8
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_083aea89eb0a",
+          "name": "12-06-2022",
+          "note": "Daily/2022/12-December/12-06-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_d8ca7b59db09",
+          "name": "12-09-2022",
+          "note": "Daily/2022/12-December/12-09-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 9
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_993b78680ac8",
+          "name": "2022-12-08",
+          "note": "2022-12-08.md",
+          "date": {
+            "year": 8,
+            "month": 5,
+            "day": 12
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_6a9878cae8c9",
+          "name": "12-11-2022",
+          "note": "Daily/2022/12-December/12-11-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 11
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_0ae9797ae988",
+          "name": "12-11-2022",
+          "note": "Daily/2022/12-December/12-11-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 11
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_8b2bab8bfa7b",
+          "name": "12-12-2022",
+          "note": "Daily/2022/12-December/12-12-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 12
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_fb383aca29fb",
+          "name": "12-12-2022",
+          "note": "Daily/2022/12-December/12-12-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 12
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_b9793b8bbbea",
+          "name": "01-25-2023",
+          "note": "Daily/2023/01-January/01-25-2023.md",
+          "date": {
+            "year": 2023,
+            "month": 0,
+            "day": 25
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_2a2b682adbe9",
+          "name": "01-25-2023",
+          "note": "Daily/2023/01-January/01-25-2023.md",
+          "date": {
+            "year": 2023,
+            "month": 0,
+            "day": 25
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_0aa9d959187b",
+          "name": "12-13-2022",
+          "note": "Daily/2022/12-December/12-13-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 13
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_1a89284aa9ab",
+          "name": "12-14-2022",
+          "note": "Daily/2022/12-December/12-14-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 14
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_5aab99eab938",
+          "name": "12-16-2022",
+          "note": "Daily/2022/12-December/12-16-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 16
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_4b3bb9f8fb79",
+          "name": "12-19-2022",
+          "note": "Daily/2022/12-December/12-19-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 19
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_7bcab9ba483a",
+          "name": "12-21-2022",
+          "note": "Daily/2022/12-December/12-21-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 21
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_4b4b68086bc9",
+          "name": "12-22-2022",
+          "note": "Daily/2022/12-December/12-22-2022.md",
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 22
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_aa0a39ca1aeb",
+          "name": "01-04-2023",
+          "note": "Daily/2023/01-January/01-04-2023.md",
+          "date": {
+            "year": 2023,
+            "month": 0,
+            "day": 4
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_eaa83b9818da",
+          "name": "01-09-2023",
+          "note": "Daily/2023/01-January/01-09-2023.md",
+          "date": {
+            "year": 2023,
+            "month": 0,
+            "day": 9
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_789bfb2aeae9",
+          "name": "01-05-2023",
+          "note": "Daily/2023/01-January/01-05-2023.md",
+          "date": {
+            "year": 2023,
+            "month": 0,
+            "day": 5
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_9a1ab9880a98",
+          "name": "01-10-2023",
+          "note": "Daily/2023/01-January/01-10-2023.md",
+          "date": {
+            "year": 2023,
+            "month": 0,
+            "day": 10
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_7bc8b9fbca48",
+          "name": "01-06-2023",
+          "note": "Daily/2023/01-January/01-06-2023.md",
+          "date": {
+            "year": 2023,
+            "month": 0,
+            "day": 6
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_f828e81a694b",
+          "name": "01-18-2023",
+          "note": "Daily/2023/01-January/01-18-2023.md",
+          "date": {
+            "year": 2023,
+            "month": 0,
+            "day": 18
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_a94bcb9a78ba",
+          "name": "01-13-2023",
+          "note": "Daily/2023/01-January/01-13-2023.md",
+          "date": {
+            "year": 2023,
+            "month": 0,
+            "day": 13
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_f9f9eb99ca99",
+          "name": "01-16-2023",
+          "note": "Daily/2023/01-January/01-16-2023.md",
+          "date": {
+            "year": 2023,
+            "month": 0,
+            "day": 16
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_0b69fa791b8a",
+          "name": "01-11-2023",
+          "note": "Daily/2023/01-January/01-11-2023.md",
+          "date": {
+            "year": 2023,
+            "month": 0,
+            "day": 11
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_7b78f89889ba",
+          "name": "01-12-2023",
+          "note": "Daily/2023/01-January/01-12-2023.md",
+          "date": {
+            "year": 2023,
+            "month": 0,
+            "day": 12
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_f93aba5bcba9",
+          "name": "01-19-2023",
+          "note": "Daily/2023/01-January/01-19-2023.md",
+          "date": {
+            "year": 2023,
+            "month": 0,
+            "day": 19
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        },
+        {
+          "id": "ID_6ac99a3939aa",
+          "name": "01-24-2023",
+          "note": "Daily/2023/01-January/01-24-2023.md",
+          "date": {
+            "year": 2023,
+            "month": 0,
+            "day": 24
+          },
+          "end": null,
+          "description": "",
+          "auto": true
+        }
+      ],
+      "id": "ID_08b818eae8f8",
+      "categories": [
+        {
+          "name": "Natural Events",
+          "id": "natural-events",
+          "color": "#2E7D32"
+        },
+        {
+          "name": "Christian Holidays",
+          "id": "christian-holidays",
+          "color": "#9b2c2c"
+        },
+        {
+          "name": "Secular Holidays",
+          "id": "secular-holidays",
+          "color": "#0D47A1"
+        },
+        {
+          "name": "Historical Events",
+          "id": "historical-events",
+          "color": "#455A64"
+        },
+        {
+          "name": "Miscellaneous Events",
+          "id": "miscellaneous-events",
+          "color": "#0288D1"
+        }
+      ],
+      "date": 1674695675926
+    }
+  ],
+  "configDirectory": null,
+  "currentCalendar": null,
+  "dailyNotes": false,
+  "dateFormat": "MM-DD-YYYY",
+  "defaultCalendar": "ID_08b818eae8f8",
+  "eventPreview": false,
+  "exit": {
+    "saving": false,
+    "event": false,
+    "calendar": false
+  },
+  "eventFrontmatter": true,
+  "parseDates": true,
+  "settingsToggleState": {
+    "calendars": true,
+    "events": true,
+    "advanced": true
+  },
+  "showIntercalary": false,
+  "version": {
+    "major": null,
+    "minor": null,
+    "patch": null
+  },
+  "debug": false
+}
