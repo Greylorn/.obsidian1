@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/AD lateral movement & Post exploitation.md",
+                "file": "docs/Work/Customers/Macoupin County Housing Authority.md",
                 "mode": "source",
                 "source": false
               }
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/AD lateral movement & Post exploitation.md",
+                "file": "docs/Work/Customers/Macoupin County Housing Authority.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/AD lateral movement & Post exploitation.md",
+                "file": "docs/Work/Customers/Macoupin County Housing Authority.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/AD lateral movement & Post exploitation.md"
+                "file": "docs/Work/Customers/Macoupin County Housing Authority.md"
               }
             }
           },
@@ -197,6 +197,8 @@
   },
   "active": "ba79292aa7d84fcd",
   "lastOpenFiles": [
+    "docs/Work/Customers/Stock Auto Body.md",
+    "docs/AD lateral movement & Post exploitation.md",
     "docs/Daily/2023/01-January/01-25-2023.md",
     "docs/Hash dumping.md",
     "docs/Daily/2022/12-December/12-12-2022.md",
@@ -204,8 +206,6 @@
     "docs/Daily/2022/12-December/12-10-2022.md",
     "docs/Iperf Documentation.md",
     "docs/FRS to DFSR Sysvol.md",
-    "docs/Free RDP TLS Cert.md",
-    "docs/AD lateral movement & Post exploitation.md",
-    "docs/CLI Stuff.md"
+    "docs/Free RDP TLS Cert.md"
   ]
 }
